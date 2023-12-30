@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Stylesheet Replacer",
+    "version": "1.0",
+    "description": "Automatically replace the stylesheet on MCW Service Manager",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "webNavigation"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://servicemanager.mycomputerworks.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["style.css"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
