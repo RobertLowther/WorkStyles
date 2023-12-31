@@ -1,9 +1,12 @@
+html {
+    border-top: 2px solid Blue;
+}
+
 body {
     background-color: #333 !Important;
-    border-top: 2px solid Blue;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: auto;
     padding-bottom: 2em;
 }
 
