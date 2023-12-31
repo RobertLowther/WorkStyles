@@ -5,6 +5,15 @@ html {
 body {
     background-color: #333 !Important;
     margin: auto;
+    color: whitesmoke;
+}
+
+table {
+    display: block !important;
+}
+
+td {
+    border-style: none !important;
 }
 
 /* Header Section */
@@ -41,7 +50,7 @@ body {
 #navigation {
     font-size: 13px;
     top: 7rem !important;
-    width: 100%;
+    width: 1476px;
 }
 
 #navigation ul {
@@ -58,10 +67,11 @@ body {
 #navigation li a {
     display: block;
     text-align: center;
-    width: 120px;
+    width: 160px;
     height: 40px;
     line-height: 40px;
     font-weight: 700;
+    padding: 0px !important;
 }
 
 #navigation li a:link,
@@ -74,7 +84,7 @@ body {
 }
 
 #navigation a:hover {
-    background-color: DodgerBlue;
+    background-color: DodgerBlue !important;
     color: #333;
 }
 
@@ -94,20 +104,18 @@ body {
 }
 
 /* Main Content */
+#ctl00_MainContent_Panel1 {
+    width: 200px;
+    padding-left: 10px;
+}
+
+#ctl00_MainContent_Image1 {
+    padding-left: 7px;
+}
 
 #ctl00_MainContent_upMarquee img {
     width: 997px;
     border-radius: 1rem 1rem 0 0;
-}
-
-#ctl00_MainContent_UpdatePanel1 div:nth-child(2) {
-    top: 140px !important;
-    z-index: 50 !important;
-}
-
-#ctl00_MainContent_UpdatePanel1 div:nth-child(1) {
-    top: 180px !important;
-    left: max(calc(100vw - 350px), 1230px) !important;
 }
 
 #ctl00_MainContent_tbQueueLabel0 {
@@ -142,9 +150,25 @@ body {
     width: 997px;
 }
 
+#ctl00_MainContent_Panel3 table {
+    margin-left: 0 !important;
+    margin-top: 4px !important;
+    width: 997px !important;
+}
+
 #content {
     margin-left: 13em;
-    margin-top: 3.5em;
+    margin-top: 5em;
+}
+
+#ctl00_MainContent_UpdatePanel1 div:nth-child(2) {
+    top: 170px !important;
+    z-index: 50 !important;
+}
+
+#ctl00_MainContent_UpdatePanel1 div:nth-child(1) {
+    top: 200px !important;
+    left: max(calc(100vw - 350px), 1230px) !important;
 }
 
 #ctl00_MainContent_UpdatePanel1 table table tr:last-child td:last-child {
@@ -159,11 +183,12 @@ body {
     display: none;
 }
 
-table {
-    margin-top: 2px !important;
-    display: block !important;
+#content span > table {
+    margin-top: 11px !important;
+    width: 997px !important;
 }
 
-td {
-    border-style: none !important;
+#content span > table table {
+    width: 997px !important;
+    color: black;
 }
